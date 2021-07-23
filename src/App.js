@@ -1,9 +1,17 @@
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Login from './Components/Login';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>Disney World</h1>
+      <Router>
+        <Switch>
+          <Route exact path='/'>
+            <Login />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
