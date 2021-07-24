@@ -12,6 +12,7 @@ const Login = (props) => {
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s
           </Description>
+          <CTALogoTwo src="/images/cta-logo-two.png" alt="" />
         </CTA>
         <BgImage />
       </Content>
@@ -97,10 +98,19 @@ const SignUp = styled.a`
 `;
 
 const Description = styled.p`
- color: hsla(0, 0%, 93.5%m 1);
- font: 12px;
- margin: 0 0 24px;
- line-height: 1.5;
+  color: hsla(0, 0%, 93.5%m 1);
+  font: 12px;
+  margin: 0 0 24px;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+`;
+
+const CTALogoTwo = styled.img`
+ max-width: 600px;
+ margin-bottom: 20px;
+ display: inline-block;
+ vertical-align: bottom;
+ width: 100%;
 `;
 
 export default Login;
