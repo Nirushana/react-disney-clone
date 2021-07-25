@@ -8,7 +8,10 @@ function Header(Props) {
                 <img src='/images/logo.svg' alt='Disney+' />
             </Logo>
             <NavMenu>
-                menu
+                <a href='/home'>
+                    <img src='/images/home-icon.svg' alt='home'/>
+                    <span>HOME</span>
+                </a>
             </NavMenu>
         </Nav>
     )
@@ -56,6 +59,42 @@ const NavMenu = styled.div`
 
  @media (max-width: 768px) {
      display: none;
+ }
+
+ a{
+     display: flex;
+     align-items: center;
+     padding: 0 12px;
+
+     img{
+         height: 20px;
+         min-width: 20px;
+         width: 20px;
+         z-index: auto;
+     }
+
+     span{
+         color: rgba(249, 249, 249);
+         font-size: 13px;
+         letter-spacing: 1.42px;
+         line-height: 1.08;
+         padding: 2px 8px;
+         white-space: nowrap;
+         position: relative;
+     }
+
+     &:before{
+         background-color: rgba(249, 249, 249);
+         border-radius: 0px 0px 4px 4px;
+         bottom: -6px;
+         content: '';
+         opacity: 0;
+         position: absolute;
+         right: 0px;
+         transform-origin: left center;
+         transform: scaleX(0);
+         
+     }
  }
 `
 
