@@ -43,7 +43,7 @@ function Header(Props) {
           <span>SERIES</span>
         </a>
       </NavMenu>
-      <Login>Login</Login>
+      <Login onClick={handleAuth} >Login</Login>
     </Nav>
   );
 }
