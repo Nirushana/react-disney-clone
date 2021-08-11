@@ -9,7 +9,7 @@ function Header(Props) {
       .then((result) => {
         console.log(result.message);
       })
-      .catch((error) => console.log(error));
+      .catch((error) => console.log(error.message));
   };
 
   return (
